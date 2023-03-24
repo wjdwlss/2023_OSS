@@ -34,29 +34,22 @@
 #!/usr/bin/env bash
 echo "----------"
 echo "name :"
-
-echo
-
+echo " "
 echo "----------"
 echo "student id :"
-
-
-file_path=`find /home/kau2/ -name w2_homework.txt 2> /dev/null`
+echo ""
 echo "----------"
-echo
-echo "file path :"
-echo $file_path
-echo
 
-line_num=`wc -l $file_path | cut -c 1 -`
+path=$(find /home/kau2 -name "w2_homework.txt" 2>/dev/null)
+echo "file path :"
+echo "$path"
 echo "----------"
 echo "line number :"
-echo $line_num
-echo
-
+cat "$path" | wc -l
 echo "----------"
-echo "lask line :"
-tail -n 1 $file_path
+echo "last line :"
+cat "$path" | tail -1path
+
 ```
 
 ## 마크다운

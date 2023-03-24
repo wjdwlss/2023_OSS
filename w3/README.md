@@ -37,7 +37,7 @@ echo "name :"
 echo " "
 echo "----------"
 echo "student id :"
-echo ""
+echo " "
 echo "----------"
 
 path=$(find /home/kau2 -name "w2_homework.txt" 2>/dev/null)
